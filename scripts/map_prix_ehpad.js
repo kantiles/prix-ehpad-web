@@ -15,7 +15,7 @@ map.on('load', () => {
     // departements
     map.addSource('departements', {
         type: 'geojson',
-        data: 'data/prix_ehpad_dep.geojson'
+        data: 'https://raw.githubusercontent.com/kantiles/prix-ehpad-web/main/data/prix_ehpad_dep.geojson'
     });
     // en invisible
     map.addLayer({
@@ -61,7 +61,7 @@ map.on('load', () => {
     // ehpad
     map.addSource('ehpad', {
         type: 'geojson',
-        data: 'data/prix_ehpad.geojson'
+        data: 'https://raw.githubusercontent.com/kantiles/prix-ehpad-web/main/data/prix_ehpad.geojson'
     });
     map.addLayer({
         'id': 'prix-ehpad',
