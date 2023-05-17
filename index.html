@@ -75,16 +75,19 @@ ul.task-list li input[type="checkbox"] {
 <div class="grid">
 <!-- Sidebar -->
 <div class="g-col-3 sidebar">
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="style/logo_kantiles.svg" style="width:30.0%;height:30.0%"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="style/logo_kantiles.svg" style="width:30.0%;height:30.0%" class="figure-img"></p>
+</figure>
 </div>
 </div>
-<button id="reset-button">
-Annuler selection
-</button>
-<section id="indicateurs" class="level3">
-<h3 data-anchor-id="indicateurs">Indicateurs</h3>
+</div>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Indicateurs</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">En savoir plus</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div id="listing-group">
 <div>
 <input type="checkbox" id="prixHebPermCs_d" name="prix-ehpad" value="prixHebPermCs_d" checked=""><label for="prixHebPermCs_d">Prix en chambre simple</label>
@@ -204,9 +207,11 @@ Annuler selection
 <div style="font-size:small;">
 <p>(Cliquez pour afficher les valeurs. Chaque tranche de prix contient 20% des EHPAD.)</p>
 </div>
-</section>
-<section id="en-savoir-plus" class="level3">
-<h3 data-anchor-id="en-savoir-plus">En savoir plus</h3>
+<button id="reset-button">
+Annuler selection
+</button>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div style="font-size:small;">
 <section id="définitions" class="level4">
 <h4 data-anchor-id="définitions">Définitions</h4>
@@ -227,7 +232,9 @@ Annuler selection
 <p><a href="mailto:contact@tillac-data.com">Contact</a></p>
 </section>
 </div>
-</section>
+</div>
+</div>
+</div>
 </div>
 <!-- Main block -->
 <div class="g-col-9">

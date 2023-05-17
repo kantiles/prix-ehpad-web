@@ -26,6 +26,7 @@ $light-coral : #E57872;
 $vermillion : #D93930;
 $yellow-green : #7EC134;
 $viridian : #008A71;
+$cyprus : #074d60;
 
 $primary: $moonstone !default;
 $secondary: $gray-800 !default;
@@ -52,7 +53,7 @@ $body-color: $gray-800 !default;
 // Fonts
 
 $font-family-sans-serif: "Figtree", sans-serif !default;
-$font-family-header: "Alegreya" !default;
+$font-family-header: "Figtree", sans-serif !default;
 $headings-font-weight: 400 !default;
 $header-font-weight: 900 !default;
 
@@ -83,6 +84,7 @@ $web-font-path-head: "https://fonts.googleapis.com/css2?family=Alegreya:wght@400
 
 body {
   -webkit-font-smoothing: antialiased;
+  color: $cyprus;
 }
 
 h1 {
@@ -107,11 +109,11 @@ h1.title {
 // Layout - sidebar
 
 .sidebar {
-  background-color: $sunglow;
   padding-left: $spacer * .5;
   padding-right: $spacer * .5;
   /* hack ? */
   height: 100in;
+  border-right: solid $cyprus 0.3em;
 }
 
 .sidebar h3,
@@ -128,8 +130,9 @@ h4 {
   padding-left: $spacer;
 }
 
-.sidebar a {
-  color: $white;
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+  color: $cyprus;
+  font-weight: bold;
 }
 
 // Reset-button
